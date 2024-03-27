@@ -168,8 +168,8 @@ public class ToolRentalServiceTest {
         assertEquals(new BigDecimal("14.95"), rentalAgreement.getPreDiscountCharge());
         assertEquals(0, rentalAgreement.getDiscountPercent(), 0);
         assertEquals(new BigDecimal("0.00"), rentalAgreement.getDiscountAmount());
-        assertEquals(new BigDecimal("8.97"), rentalAgreement.getFinalCharge());
-        assertEquals(3, rentalAgreement.getChargeDays());
+        assertEquals(new BigDecimal("14.95"), rentalAgreement.getFinalCharge());
+        assertEquals(5, rentalAgreement.getChargeDays());
     }
 
     @Test
