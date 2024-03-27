@@ -58,12 +58,4 @@ public class Tool {
         return dailyCharge;
     }
 
-    public boolean isChargeable(LocalDate date) {
-        DayOfWeek dayOfWeek = date.getDayOfWeek();
-        if (dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY) {
-            return weekendCharge;
-        } else {
-            return weekdayCharge;
-        }
-    }
 }
